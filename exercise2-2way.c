@@ -60,7 +60,6 @@ int cache_access(tCache cache, int address) {
         else entrada->m = 0;
     }
 
-    cache->datos[set] = entrada;
     return res;
 }
 

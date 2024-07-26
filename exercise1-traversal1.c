@@ -39,7 +39,6 @@ int cache_access(tCache cache, int address) {
     if (entrada->tag != tag || !entrada->valido) {
         entrada->tag = tag;
         entrada->valido = 1; 
-        cache->datos[set] = entrada;
         cache->misses += 1;
         res = 0;
     } 
